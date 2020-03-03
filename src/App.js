@@ -1,30 +1,15 @@
 import React from 'react';
+import Form from './components/Form'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state ={
-      searchBar: '',
-    }
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(e) {
-    this.setState({
-      searchBar: e.target.value
-    })
-  }
-
-  handleSubmit(e) {
-    console.log('hi');
-    e.preventDefault()
-
   }
 
   render() {
     return (
       <div>
-        <div className="search-bar">
+        <div className='container'>
           <Form />
         </div>
       </div>
